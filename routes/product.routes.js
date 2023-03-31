@@ -49,7 +49,7 @@ productRouter.get("/", async (req, res) => {
       .sort({ price: req.query.sort === "lowtohigh" ? 1 : -1 })
       .skip(parseInt(req.query.page) * 12)
       .limit(12);
-      console.log(prod)
+      // console.log(prod)
     res.send(prod);
 
   } catch (error) {

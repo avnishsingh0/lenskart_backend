@@ -20,7 +20,7 @@ app.use('/users',userRouter)
 app.use("/product", productRouter);
 app.use("/cart", cartRouter);
 
-app.listen(4500,async()=>{
+app.listen(8080,async()=>{
     try {
         await connection
         console.log("connect to db")
@@ -28,6 +28,6 @@ app.listen(4500,async()=>{
         console.log("can't connected")
         console.log(error);
     }
-    console.log("Server is running port 4500")
+    console.log("Server is running port 8080")
     
 })
